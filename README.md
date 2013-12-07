@@ -1,7 +1,7 @@
 Owin.RedisSession
 =================
 
-Redis Session provider for Owin.
+Redis Session provider for Owin built by [CloudStructures](https://github.com/neuecc/CloudStructures) it is Redis Client based on BookSleeve.
 
 Install
 ---
@@ -47,7 +47,7 @@ Full code is avaliable on this Repositry, [Owin.RedisSession.Sample.SelfHost](ht
 
 with OwinRequestScopeContex
 ---
-[OwinRequestScopeContext] enables take RedisSession everywhere.
+[OwinRequestScopeContext](https://github.com/neuecc/OwinRequestScopeContext) enables take RedisSession everywhere.
 
 ```csharp
 app.UseRequestScopeContext();
