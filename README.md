@@ -44,7 +44,7 @@ app.Run(async context => // request begin, middelware get all values from Redis 
 
 Full code is avaliable on this Repositry, [Owin.RedisSession.Sample.SelfHost](https://github.com/neuecc/Owin.RedisSession/tree/master/Owin.RedisSession.Sample.SelfHost).
 
-with OwinRequestScopeContex
+with OwinRequestScopeContext
 ---
 [OwinRequestScopeContext](https://github.com/neuecc/OwinRequestScopeContext) enables take RedisSession everywhere.
 
