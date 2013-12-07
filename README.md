@@ -1,7 +1,7 @@
 Owin.RedisSession
 =================
 
-Redis Session Provider for Owin built by [CloudStructures](https://github.com/neuecc/CloudStructures) it is Redis Client based on BookSleeve.
+Redis Session Provider for Owin built by [CloudStructures](https://github.com/neuecc/CloudStructures) which is Redis Client based on BookSleeve.
 
 Install
 ---
