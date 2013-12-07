@@ -14,7 +14,6 @@ Usage
 ---
 ```csharp
 // enable RedisSession Middleware.
-// RedisSession
 app.UseRedisSession(new RedisSessionOptions(new RedisSettings("127.0.0.1")));
 app.Run(async context => // request begin, middelware get all values from Redis server.
 {
