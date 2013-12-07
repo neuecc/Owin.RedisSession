@@ -1,0 +1,1 @@
+nuget pack Owin.RedisSession.nuspec
