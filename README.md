@@ -46,7 +46,7 @@ Full code is avaliable on this Repositry, [Owin.RedisSession.Sample.SelfHost](ht
 
 with OwinRequestScopeContext
 ---
-[OwinRequestScopeContext](https://github.com/neuecc/OwinRequestScopeContext) enables take RedisSession everywhere.
+[OwinRequestScopeContext](https://github.com/neuecc/OwinRequestScopeContext) enables take RedisSession everywhere. create helper extension methods will be happy.
 
 ```csharp
 app.UseRequestScopeContext();
@@ -66,6 +66,14 @@ void Store()
     // GetSession everywhere.
     var session = OwinRequestScopeContext.Current.Session();
     session.Set<int>("test", new Random().Next());
+}
+
+public static class Extensions
+{
+    public static RedisSession Session(this IOwinRequestScopeContext context)
+    {
+        return context.Environment.AsRedisSession();
+    }
 }
 ```
 
